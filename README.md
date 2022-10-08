@@ -1,2 +1,2 @@
 # typesigma
-Based ORM/ODM for Node.js and TypeScript
+Based ORM for Node.js and TypeScript you can depend on
