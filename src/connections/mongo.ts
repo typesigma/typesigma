@@ -1,7 +1,7 @@
 import { MongoClient, Db } from "mongodb";
 
 const connectToMongoDB = async (connection: string) => {
-  const dashIndex = connection.indexOf("/", 11); // 11 to skip the / in "mongodb://"
+  const dashIndex = connection.lastIndexOf("/");
   const connectionURL = connection.slice(0, dashIndex);
   const DBName = connection.slice(dashIndex + 1);
   const client: MongoClient = new MongoClient(connectionURL);
